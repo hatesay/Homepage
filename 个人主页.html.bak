@@ -122,7 +122,7 @@
 <!--所有按钮-->
 	</head>
 	<!--按钮显示位置-->
-	<div style="padding-left:450px;padding-top:400px">
+	<div style="padding-left:400px;padding-top:400px">
 	<body>
 		<!--bilibili按钮-->
 		<button onclick="bilibili()" class="bilibili">bilibili</button>
