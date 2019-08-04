@@ -44,23 +44,25 @@
 <!-- bilibili 按钮设置-->
 		<style>
 			.bilibili
-			{
-			-webkit-transition-duration: 0.5s;/*与第二项同步*/
-			transition-duration: 0.5s;/*渐变时间*/
-			text-align: center;/*本文显示方式*/
-			background-color: white;/*背景颜色*/
-			padding: 20px 40px;/*边距像素*/
-			color: #00a1d6;/*本文颜色*/
-			border:0px solid;/*边角显示方式及边框像素*/
-			border-radius:100px;/*圆边像素*/
-			}
+				{
+				-webkit-transition-duration: 0.5s;/*与第二项同步*/
+				transition-duration: 0.5s;/*渐变时间*/
+				text-align: center;/*本文显示方式*/
+				background-color: white;/*背景颜色*/
+				padding: 20px 40px;/*边距像素*/
+				color: #00a1d6;/*本文颜色*/
+				border:0px solid;/*边角显示方式及边框像素*/
+				border-radius:100px;/*圆边像素*/
+				}
 			.bilibili:hover/*鼠标放在上面时显示*/
-			{
-			background-color: #00a1d6;/*背景颜色*/
-			color: white;/*文本颜色*/
-			}
+				{
+				background-color: #00a1d6;/*背景颜色*/
+				color: white;/*文本颜色*/
+				cursor:pointer;
+				transform:translate(0px,-10px);
+				}
 		</style>
-<!-- 空白2 按钮设置-->
+<!-- GitHub 按钮设置-->
 		<style>
 			.GitHub/*正常显示*/
 				{
@@ -73,10 +75,12 @@
 				border:0px solid;/*边角显示方式及边框像素*/
 				border-radius:100px;/*圆边像素*/
 				}
-			.nothing:hover/*鼠标放在上面时显示*/
+			.GitHub:hover/*鼠标放在上面时显示*/
 				{
 				background-color: #00a1d6;/*背景颜色*/
 				color: white;/*文本颜色*/
+				cursor:pointer;
+				transform:translate(0px,-10px);
 				}
 		</style>
 <!-- 空白3 按钮设置-->
@@ -96,6 +100,8 @@
 				{
 				background-color: #00a1d6;/*背景颜色*/
 				color: white;/*文本颜色*/
+				cursor:pointer;
+				transform:translate(0px,-10px);
 				}
 		</style>
 <!-- 空白4 按钮设置-->
@@ -121,19 +127,19 @@
 <!--链接转跳-->
 	<head>
 		<script>
-		function bilibili()
+			function bilibili()
 			{
 			window.open("http://www.bilibili.com")//bilibili链接
 			}
-		function GitHub()
+			function GitHub()
 			{
-			window.open("https://github.com")//空白链接
+			window.open("https://github.com")//GitHub链接
 			}
-		function nothing3()
+			function nothing3()
 			{
 			window.open("")//空白链接
 			}
-		function nothing4()
+			function nothing4()
 			{
 			window.open("")//空白链接
 			}
@@ -144,7 +150,7 @@
 			<body>
 				<!-- bilibili 按钮-->
 				<button onclick="bilibili()" class="bilibili">bilibili</button>
-				<!-- 空白2 按钮-->
+				<!-- GitHub 按钮-->
 				<button onclick="GitHub()" class="GitHub">GitHub</button>
 				<!-- 空白3 按钮-->
 				<button onclick="nothing()" class="nothing">待添加</button>
