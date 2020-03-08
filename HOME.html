@@ -19,7 +19,7 @@
 		<style>
 			body
 				{
-				background-image:url("1.jpg");
+				background-image:url("Blackground/background-3.png");
 				background-attachment:fixed;
 				background-size:cover;
 				}
@@ -71,22 +71,27 @@
 				trannsition-duration:0.5s;
 				text-align:center;
 				background-color: white;
-				padding: 20px 40px;
+				padding: 20px 14px;
 				color: #00a1d6;
 				border:0px solid;
 				border-radius:100px;
 				opacity:0.7;
 				}
-			.next.hover
+			.next:hover
 				{
 				background-color: #00a1d6;
 				color: white;
 				cursor:pointer;
-				transform:translate(0px,-10px);
 				opacity:0.8;
 				}
 		</style>
-		<div style="right:5%" id="bg">
+		<script>
+			funtion Next (minNum,maxNum) {
+			var number = Math.floor(Math.random()*(max-min+1)+min);
+			document.body.style.backgroundImage="url("Blackground/background-"+number+".png")";
+			}
+		</script>
+		<div style="clear:both;position:absolute;top:2%;left:95%;margin-left:auto;margin-right:auto;" id="bg">
 			<button class="next" onclick="Next(0,184)">NEXT</button>
 		</div>
 		<div style="clear:both;position:absolute;top:65%;left:33%;margin-left:auto;margin-right:auto;">
