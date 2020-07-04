@@ -19,7 +19,7 @@
 		<style>
 			body
 				{
-				background-image:url("Blackground/background-3.png");
+				background-image:url("Blackground/background-101 .png");
 				background-attachment:fixed;
 				background-size:cover;
 				}
@@ -65,33 +65,14 @@
 				transform:translate(0px,-10px);
 				opacity:0.8;
 				}
-			.next
-				{
-				-webkit-transition-duration:0.5s;
-				trannsition-duration:0.5s;
-				text-align:center;
-				background-color: white;
-				padding: 20px 14px;
-				color: #00a1d6;
-				border:0px solid;
-				border-radius:100px;
-				opacity:0.7;
-				}
-			.next:hover
-				{
-				background-color: #00a1d6;
-				color: white;
-				cursor:pointer;
-				opacity:0.8;
+			.youtube{
+				width:460;
+				height:255;
+				margin-left:40%;
+				margin:auto;
 				}
 		</style>
-		<script>
-			funtion Next (minNum,maxNum) {
-			var number = Math.floor(Math.random()*(max-min+1)+min);
-			document.body.style.backgroundImage="url("Blackground/background-"+number+".png")";
-			}
-		</script>
-		<div style="clear:both;position:absolute;top:65%;left:33%;margin-left:auto;margin-right:auto;">
+		<div style="clear:both;position:absolute;top:65%;left:33%;margin-right:auto;">
 			<body>
 				<a href="https://www.bilibili.com" target="_blank"><button class="button">bilibili</button></a>
 				<a href="https://github.com" target="_blank"><button class="button">GitHub</button></a>
@@ -99,7 +80,7 @@
 				<button class="button" target="_blank">待添加</button>
 			</body>
 		</div>
-		<iframe src="https://www.youtube.com/embed/IHENIg8Se7M?list=PLk6pSom1zV2LVtpY1v-i3LG8gR8dSd5Iy" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 460px;height: 255px;margin: auto;"></iframe>
+		<iframe class="youtube" src="https://www.youtube.com/embed/IHENIg8Se7M?list=PLk6pSom1zV2LVtpY1v-i3LG8gR8dSd5Iy" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 	</body>
 	</html>
