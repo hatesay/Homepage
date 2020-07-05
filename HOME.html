@@ -1,0 +1,115 @@
+	<!doctype html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>Personal Homepage</title>
+	</head>
+	<video id="video1" muted autoplay="autoplay" loop="loop">
+        <source src="video/《手紙(Remix)》MV.mp4">
+    </video>
+	<head>
+		<style>
+			* {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    video {
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        max-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
+    }
+		</style>
+		<style>
+			.baidu
+				{
+				width: 750px;
+				height: 50px;
+				border: 0px solid;
+				border-radius:100px;
+				float: none;
+				text-align:center;
+				opacity:0.7;
+				}
+		</style>
+		<div style="clear:both;position:absolute;top:40%;left:22%;margin-left:auto;margin-right:auto;">
+			<form action="https://i.g-fox.cn/search">
+				<a href="https://www.baidu.com" target="_blank"></a>
+				<input type="text" class="baidu" name="q" placeholder="百度一下" autocomplete="off"></input>
+			</form>
+		</div>
+	</head>
+	<body>
+		<style>
+			.button
+				{
+				-webkit-transition-duration: 0.5s;
+				transition-duration: 0.5s;
+				text-align: center;
+				background-color: white;
+				padding: 20px 40px;
+				color: #00a1d6;
+				border:0px solid;
+				border-radius:100px;
+				opacity:0.7;
+				}
+			.button:hover
+				{
+				background-color: #00a1d6;
+				color: white;
+				cursor:pointer;
+				transform:translate(0px,-10px);
+				opacity:0.8;
+				}
+			.audio
+				{
+				-webkit-transition-duration:0.5s;
+				trannsition-duration:0.5s;
+				text-align:center;
+				background-color: white;
+				padding: 5px;
+				width:65px;
+				color: #00a1d6;
+				border:0px solid;
+				border-radius:100px;
+				opacity:0;
+				}
+			.audio:hover
+				{
+				background-color: #00a1d6;
+				color: white;
+				opacity:0.8;
+				}
+		</style>
+		<script>
+		var myvideo=document.getElementById("video1");
+		function enableMute(){
+			myvideo.muted=true;
+			document.getElementById("offAudio").id="onAudio";
+			document.getElementById("onAudio").onclick=disableMute;
+			document.getElementById("onAudio").innerHTML="声音:off";
+		}
+		function disableMute(){
+			myvideo.muted=false;
+			document.getElementById("onAudio").id="offAudio";
+			document.getElementById("offAudio").onclick=enableMute;
+			document.getElementById("offAudio").innerHTML="声音:on";
+		}
+		</script>
+			<button class=audio onclick="disableMute()" type="button" id="onAudio">声音:off</button>
+		<div style="clear:both;position:absolute;top:65%;left:33%;margin-right:auto;">
+				<a href="https://www.bilibili.com" target="_blank"><button class="button">bilibili</button></a>
+				<a href="https://github.com" target="_blank"><button class="button">GitHub</button></a>
+				<a href="https://www.douyu.com/t/SC2" target="_blank"><button class="button">3484</button></a>
+				<button class="button" target="_blank">待添加</button>
+		</div>
+	</body>
+	</html>
